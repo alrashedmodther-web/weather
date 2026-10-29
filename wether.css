@@ -1,0 +1,721 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.min{
+    background-image: url(img/weth.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.header .logo{
+    display: flex;
+    margin: 30px;
+    position: relative;
+    width: 400px;
+}
+.header .logo h2{
+    color:#fff;
+    font-size: 38px;
+    font-weight: bold;
+    width: 270px;
+    
+}
+.header .logo .go {
+    background-image: url(We.png);
+    background-size: cover;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    margin-top: -30px;
+    
+}
+.header .logo p{
+    color:rgba(255, 255, 255, .9);
+    position: absolute;
+    top: 40px;
+    left:100px;
+    font-size: 15px;
+    width: 290px;
+}
+.header .nav{
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.header .nav li{
+    font-size: 20px;
+    margin-left: 30px;
+    transition: .9s;
+    margin-bottom: 80px;
+    width:100px;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 15px;
+    text-align: center;
+    padding-left:10px ;
+    cursor:pointer;
+    display: flex;
+    position: relative;
+}
+.header .nav li img{
+    width:22px;
+    color:#fff;
+    position: absolute;
+    right: 90px;
+    top: 14px;
+}
+.header .nav li a{
+    color:#fff;
+    text-decoration: none;
+    margin-left:10px;
+}
+.header .nav .active,
+.header .nav li:hover{
+    width:130px;
+    border-radius: 50px;
+    background-color: #1683f8;
+    padding: 16px;
+    padding-left:35px;
+    cursor: pointer;
+}
+.slider-sitting{
+    display: none;
+    z-index: 10000;
+    text-align: right;
+    position: fixed;
+    flex-direction: column;
+    background-color: #1b5b96;
+    height: 400px;
+    width: 120px;
+    margin-inline-start: 1230px;
+    margin-top: -70px;
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+    
+}
+.slider-sitting h4{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: none;
+}
+.slider-sitting h4 a{
+    text-decoration: none;
+    color:#fff;
+
+}
+
+.slids{
+    display: block;
+}
+#lab{
+    color:#fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.slider-sitting select{
+    border: none;
+    padding: 8px 8px;
+    border-radius: 10px;
+    user-select: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #dbd1d1;
+   font-size: 20px;
+} 
+.slider-sitting select:focus{
+    user-select: #fff;
+}
+.slider-sitting p{
+    margin-top: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.slider-sitting span{
+    color:#d8cdcd;
+    line-height: 1.4;
+    cursor: pointer;
+
+}
+hr{
+    margin-top: 10px;
+}
+#sp{
+    margin-bottom:20px;
+}
+#pr{
+    font-size: 15px;
+}
+#def{
+    width:90px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 10px;
+}
+button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    padding: 2px 10px;
+    background-color: #1683f8;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+   
+}
+#def:focus{
+    outline: #fff;
+}
+.min .contener{
+    margin-top: -50px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+.contener .ser{
+    margin-top: -20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    padding-left:50px ;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    position: relative;
+    background-color:#e8f1fa ;
+}
+#find{
+   width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 105px;
+    margin-inline-start:-1050px;
+}
+.contener .ser:focus{
+    outline: none;
+}
+#sub{
+    position: absolute;
+    width:90px;
+    background-color: #1683f8;
+    border-radius: 50px;
+    border:none;
+    color:#fff;
+    height: 35px;
+    padding: 10px;
+   flex-direction: row-reverse;
+    font-size: 15px;
+    top: 110px;
+    cursor: pointer;
+    display: flex;
+    user-select: none;
+    justify-content:space-between;
+    margin-inline-start: 960px;
+}
+#find-sub{
+    width: 20px;
+    height: 20px;
+   
+    color:#fff;
+    user-select: none;
+}
+.wather{
+    display: flex;
+    width: 100%;
+}
+.wather .mga{
+    width:60%;
+    background-image:url(img/weth.jpg);
+    height: 290px;
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-size: cover;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+#location{
+    width:90px;
+    height: 90px;
+}
+.loc{
+    display: flex;
+}
+.mga .txl{
+    margin-top: 20px;
+}
+.mga h3{
+    width:150px;
+    color:#fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.mga p{
+    color:rgba(255, 255, 255, .9);
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.mga .sun{
+    text-align: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 37px;
+    right: 30px;
+    top:-40px;
+}
+.mga .sun span{
+    position: absolute;
+    top:30px;
+    font-size: 50px;
+    right: 130px;
+}
+.mga .time{
+    position: absolute;
+   width: 300px;
+    top: 20px;
+    margin-inline-start: 380px;
+}
+.mga .time>p{
+    margin-top: 5px;
+}
+.wather .wth{
+    width:40%;
+    height: 290px;
+    background-color: #14508a;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 15px;
+    position: relative;
+}
+.wth .contr{
+    display: flex;
+}
+.wather .wth h3{
+    color:#fff;
+   margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.wather .sky{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:-40px;
+}
+#detalis{
+    width:30px;
+    height: 30px;
+}
+.detalis{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left:20px;
+    background-color: #1b5b96;
+    border-radius: 50%;
+}
+.wather .wth .det{
+    display: flex;
+    justify-content: space-between;
+    color:rgba(255, 255, 255, .9);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 10%;
+}
+.day{
+    width:100%;
+    height: 170px;
+    background-color: #14508a;
+    border-radius: 20px;
+    padding: 5px;
+}
+.day h2{
+    margin-left: 20px;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.day .days{
+    display: flex;
+}
+.ico{
+    margin-top: -500px;
+}
+.day .days .sta{
+    width:200px;
+    height: 95%;
+    background-color: #1b5b96;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    margin-top: 7px;
+    padding: 7px;
+    background-color: #1b5b96;
+}
+.day .days .dat{
+    margin:60px;
+    font-size: 15px;
+}
+.day .days .decr{
+    text-align: center;
+}
+.days .stat{
+    white-space: nowrap;
+}
+/* start media */
+@media (min-width:1032px) and (max-width:1200px) {
+    .header .logo p{
+        font-size: 20px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .header .nav li{
+        font-size: 25px;
+    }
+    .header .nav li:hover,
+    .header .nav li.active{
+        width: 146px;
+        padding-left: 45px;
+    }
+    #find-sub {
+        width: 30px;
+        height: 30px;
+    }
+     .header .nav li img{
+        right: 100px;
+        top:17px;
+     }
+     .slider-sitting h4 a {
+        font-size: 25px;
+     }
+     .min .contener{
+        margin-top: 10px;
+     }
+         .wather .mga {
+        margin-top: 40px;
+        width:700px;
+        margin-inline-start: -140px;
+        background-image: none;
+        font-size: 25px;
+    }
+   .header .logo h2{
+        font-size: 50px;
+        width: 340px;
+    }
+    .wather .sky {
+        font-size: 25px;
+    }
+    .svg{
+        margin-top: 20px;
+    }
+    .wather .wth{
+        margin-inline-end: -130px;
+        height: 350px;
+        width: 350px;
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    .slider-sitting{
+        margin-inline-start: 900px;
+        height: 550px;
+        font-size: 25px;
+    }
+    .slider-sitting p{
+        font-size: 25px;
+    }
+    #sersh{
+        width: 100%;
+        height: 80px;
+        font-size: 25px;
+    }
+        #sub{
+        top:175px;
+        margin-inline-start: 560px;
+        width: 140px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .day .days{
+        flex-wrap: wrap;
+    }
+    .day{
+        height: fit-content;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .day .days .sta{
+        width: 330px;
+        height: 190px;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .day .days .sta img{
+        width: 80px;
+        height: 80px;
+        margin-inline-end: -200px;
+        margin-bottom: 40px;
+    }
+    .day .days .dat {
+        font-size: 22px;
+    }
+}
+@media (min-width:701px) and (max-width:1031px){
+    body{
+        font-size: 18px;
+    }
+    .min{ 
+        width: 100%;
+        position: fixed;
+    }
+   .logo p{
+    display: none;
+   }
+   .header{
+    display: flex;
+    position: relative;
+   }
+    .header .logo{
+        margin: 0;
+        padding: 30px;
+        width:300px;
+        padding-right: 10px;
+    }
+    .header .logo>h2{
+        position: absolute;
+        display: block;
+        font-size: 21px;
+        width: 130px;
+       margin-inline-start: 90px;
+        
+    }
+    .header .nav {
+       margin-inline-start: 200px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .min .contener {
+        margin-top: 10px;
+    }
+    #sit{
+        top:0;
+        
+    }
+    .slider-sitting{
+        margin-inline-start: 630px;
+        font-size: 20px;
+    }
+   
+    #find{
+        margin: 10px;
+        top: 90px;
+        margin-inline-start: 165px;
+        position: absolute;
+    }
+    #sersh{
+        border-radius: 20px;
+        width:500px;
+        height: 50px;
+        top: 110px;
+        position: absolute;
+    }
+    .wather .mga {
+        margin-top: 40px;
+        width:480px;
+       margin-inline-start: -140px;
+        background-image: none;
+    }
+    .wather .wth{
+        margin-inline-end: -130px;
+        height: 300px;
+        width: 300px;
+        margin-top: 40px;
+    }
+    .mga .time {
+        margin-inline-start: 250px;
+    }
+    .mga .sun span {
+        right: 160px;
+        top:60px;
+    }
+    #sub{
+         top:100px;
+        margin-inline-start: 400px;
+    }
+    .svg{
+        margin-top: 30px;
+        margin-left: 150px;
+        width: 80px;
+    }
+    .day .days {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+.day{
+    background-color: transparent;
+}
+.day .days .sta {
+    width: 200px;
+    height: 160px;
+    background-color: #1b5b96;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    margin-top: -20px;
+    padding: 10px;
+    background-color: #1b5b96;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.day .days .sta img{
+    width: 60px;
+    height: 60px;
+}
+.day .days .dat {
+    font-size: 20px;
+}
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    .min{ 
+        overflow: hidden;
+        height: 1000px;
+        position: relative;
+    }
+   .logo p{
+    display: none;
+   }
+   .header{
+    display: flex;
+    position: relative;
+   }
+    .header .logo{
+        margin: 0;
+        padding: 30px;
+        width:300px;
+        padding-right: 10px;
+    }
+    .header .logo>h2{
+        position: absolute;
+        display: block;
+        font-size: 21px;
+        width: 130px;
+       margin-inline-start: 90px;
+        
+    }
+    .header .nav {
+        margin-right:-30px;
+        margin-top: 0;
+    }
+    .min .contener {
+        margin-top: 10px;
+    }
+    #sit{
+        top:0;
+        margin-inline-start: 900px;
+        
+    }
+    #sit a{
+        display: none;
+        
+    }
+    #find{
+        margin: 10px;
+        top: 90px;
+        margin-inline-start: 165px;
+        position: absolute;
+    }
+    #sersh{
+        border-radius: 20px;
+        width:350px;
+        height: 50px;
+        top: 110px;
+      right: 10px;
+        position: absolute;
+    }
+    .wather .mga {
+        margin-top: 40px;
+        margin-left: -100px;
+        width:1000px;
+        margin-right: -110px;
+        background-image: none;
+    }
+    
+    #sub{
+        margin-inline-start: 115px;
+        top:100px;
+    }
+    .svg{
+        margin-top: 20px;
+        margin-right: -120px;
+    }
+    .day .days {
+    display: grid;
+    flex-direction: row;
+    margin-inline-start: -130px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    gap: 10px;
+}
+.day{
+    background-color: transparent;
+}
+.day .days .sta {
+    width: 180px;
+    height: 100%;
+    background-color: #1b5b96;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    margin-top: -8px;
+    padding: 15px;
+    background-color: #1b5b96;
+}
+/* not will use */
+    #non{
+        display: none;
+    }
+    #sit{
+        margin: 0;
+        z-index: 200000;
+    }
+    .header .nav .active,
+    .header .nav li:hover{
+        background-color:transparent;
+    }
+    .slider-sitting{
+        margin-inline-start: 265px;
+    }
+    .time{
+        display: none;
+    }
+    .wth{
+        display: none;
+    }
+    
+}

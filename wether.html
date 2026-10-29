@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wether.css">
+</head>
+<body>
+    <div class="min">
+        
+        <div class="header">
+            <div class="logo">
+                <div class="go"></div>
+                <h2 data-i18n="title">Weather <span id="app">App</span></h2>
+                <p data-i18n="subtitle">Get real-time Weather Updates for any city </p>
+            </div>
+            <ul class="nav">
+                <li class="active" id="non">
+                    <img src="img/house-solid-full.svg" alt="" >
+                    <a data-i18n="home" href="#home">Home</a>
+                </li>
+                <li id="sit" class="sit">
+                    <img src="img/gear-solid-full (1).svg" alt="">
+                    <a data-i18n="settings" href="#Sitting">Sitting</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="slider-sitting">
+            
+            <label data-i18n="language" id="lab">language</label>
+            <select name="" id="language" >
+                <option data-i18n="ar" value="ar">arbic</option>
+                <option data-i18n="en" value="en">english</option>
+            </select>
+            <hr color="#f1f1f1">
+            <p data-i18n="default" class="kr" id="pr">default city</p>
+            <input type="text" id="def">
+            <button data-i18n="chose" class="btn">chose</button>
+            <hr color="#f1f1f1">
+            <h4><a data-i18n="privacy" href="https://openweather.co.uk/privacy-policy" target="_blank">privacy policy</a></h4>
+        </div>
+        <div class="contener">
+            <form>
+                <div class="fin">
+                     <input type="text" id="sersh" class="ser" data-i18n="placeholder">                
+                    
+                </div>
+                <div id="sub">
+                    <img src="img/sistrix-brands-solid-full.svg" alt="" id="find-sub">
+                    <span data-i18n="search">search</span>
+                </div>
+            </form>
+            <div class="wather">
+                <div class="mga">
+                    <div class="loc">
+                        <img src="img/location-dot-solid-full.svg" alt="" id="location">
+                        <div class="txl">
+                            <h3 id="h3">Khartoum</h3>
+                            <p id="pragrph">sudan</p>
+                        </div>
+                    </div>
+                    <div class="sun">
+                        <span id="tem" data-i18n="celsius">32ْ C</span>
+                        <div class="svg">
+                                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120" height="120" viewBox="0 0 48 48" style="fill:#ffd828f5;">
+    &lt; img width="64" height="64" src="https://img.icons8.com/external-flat-amoghdesign/64/external-cloud-weather-vol-01-flat-amoghdesign-6.png" alt="external-cloud-weather-vol-01-flat-amoghdesign-6"/&gt;
+    <path d="M 23.976562 3.9785156 A 1.50015 1.50015 0 0 0 22.5 5.5 L 22.5 8.5 A 1.50015 1.50015 0 1 0 25.5 8.5 L 25.5 5.5 A 1.50015 1.50015 0 0 0 23.976562 3.9785156 z M 10.902344 9.4042969 A 1.50015 1.50015 0 0 0 9.8574219 11.980469 L 11.978516 14.101562 A 1.5012202 1.5012202 0 0 0 14.101562 11.978516 L 11.980469 9.8574219 A 1.50015 1.50015 0 0 0 10.902344 9.4042969 z M 37.050781 9.4042969 A 1.50015 1.50015 0 0 0 36.019531 9.8574219 L 33.898438 11.978516 A 1.5012202 1.5012202 0 0 0 36.021484 14.101562 L 38.142578 11.980469 A 1.50015 1.50015 0 0 0 37.050781 9.4042969 z M 24 13 A 11 11 0 0 0 24 35 A 11 11 0 0 0 24 13 z M 5.5 22.5 A 1.50015 1.50015 0 1 0 5.5 25.5 L 8.5 25.5 A 1.50015 1.50015 0 1 0 8.5 22.5 L 5.5 22.5 z M 39.5 22.5 A 1.50015 1.50015 0 1 0 39.5 25.5 L 42.5 25.5 A 1.50015 1.50015 0 1 0 42.5 22.5 L 39.5 22.5 z M 13.009766 33.445312 A 1.50015 1.50015 0 0 0 11.978516 33.898438 L 9.8574219 36.019531 A 1.501221 1.501221 0 1 0 11.980469 38.142578 L 14.101562 36.021484 A 1.50015 1.50015 0 0 0 13.009766 33.445312 z M 34.943359 33.445312 A 1.50015 1.50015 0 0 0 33.898438 36.021484 L 36.019531 38.142578 A 1.5012209 1.5012209 0 1 0 38.142578 36.019531 L 36.021484 33.898438 A 1.50015 1.50015 0 0 0 34.943359 33.445312 z M 23.976562 37.978516 A 1.50015 1.50015 0 0 0 22.5 39.5 L 22.5 42.5 A 1.50015 1.50015 0 1 0 25.5 42.5 L 25.5 39.5 A 1.50015 1.50015 0 0 0 23.976562 37.978516 z"></path>
+    </svg>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p id="date">Tue,24 Sep 2026</p>
+                        <p id=timezone>2:45pm</p>
+                    </div>
+                    <div class="sky" id="sk">clear sky</div>
+                </div>
+                <div class="wth">
+                    <div class="contr">
+                        <img src="img/sliders-solid-full.svg" alt="" id="detalis">
+                        <h3 data-i18n="weatherDetails">Weather Detills</h3>
+                    </div>
+                    <hr color="#f1f1f1">
+                    <div class="det" >
+                        <img src="img/droplet-solid-full.svg" alt="" class="detalis">
+                        <span data-i18n="humidity">Humidity </span>
+                        <span id="humid" >35%</span>
+                    </div>
+                    <div class="det" >
+                        <img src="img/wind-solid-full.svg" alt="" class="detalis">
+                        <span data-i18n="windSpeed">Wind Speed </span>
+                        <span id="speed" data-i18n="kmh">18 <span data-i18n="kmh">Km/h</span></span>
+                    </div>
+                    <div class="det">
+                        <img src="img/icons8-gauge-100.png" alt="" class="detalis">
+                         <span data-i18n="pressure">pressure  </span>
+                        <span id="pres" data-i18n="hpa">1008 hpa</span>
+                    </div>
+                    <div class="det" >
+                        <img src="img/icons8-eye-32.png" alt="" class="detalis">
+                        <span data-i18n="windSpeed">Vesibility</span> 
+                        <span id="visi" data-i18n="km">10 Km</span>
+                    </div>
+                    <div class="det">
+                        <img src="img/icons8-sun-64.png" alt="" class="detalis">
+                         <span data-i18n="feelsLike">feels Like</span>  
+                        <span id="feel" data-i18n="celsius">35 ْC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="days">
+                    <div class="sta t1">
+                        <p id="dt1">Wed 25 sep</p>
+                        <img src="img/icons8-sun-64.png" alt=""  width="50px" height="50px">
+                    <span class="dat">34ْ/23</span>
+                    </div>
+                    <div class="sta t2">
+                        <p id="dt2">Thu 26 Sep</p>
+                        <img src="img/we.png" alt="" width="50px" height="50px">
+                        <span class="dat">33ْ/32</span>
+                    </div>
+                    <div class="sta t3">
+                        <p id="dt3">Fri 27 Sep</p>
+                        <img width="48" height="48" src="https://img.icons8.com/external-those-icons-flat-those-icons/96/external-Cloudy-weather-those-icons-flat-those-icons-2.png" alt="external-Cloudy-weather-those-icons-flat-those-icons-2"/>
+                        <span class="dat">33ْ/32</span>
+                    </div>
+                    <div class="sta t4">
+                        <p id="dt4">Wed 25 sep</p>
+                        <img src="img/icons8-sun-64.png" alt="" width="50px" height="50px">
+                    <span class="dat">34ْ/23</span>
+                    </div>
+                    <div class="sta t5">
+                        <p id="dt5">Thu 26 Sep</p>
+                        <img src="img/we.png" alt="" width="50px" height="50px">
+                        <span class="dat">33ْ/32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="wether.js"></script>
+</body>
+</html>

@@ -26,5 +26,7 @@ weather-app/
 ├── ar.json        # ترجمة العربية
 └── README.md
 
+weatherapp here !
+[![Preview](screenshots/preview.png)](https://USERNAME.github.io/REPO-NAME/)
 👤 المطوّر | Author
                                                                                                                         alrasheed mudther                                                                                                                       

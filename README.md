@@ -27,6 +27,6 @@ weather-app/
 └── README.md
 
 weatherapp here !
-[![Preview](screenshots/preview.png)]([https://USERNAME.github.io/REPO-NAME/](http://127.0.0.1:5500/wether.html#Sitting))
+[![Preview](screenshots/preview.png)(http://127.0.0.1:5500/wether.html#Sitting))
 👤 المطوّر | Author
                                                                                                                         alrasheed mudther                                                                                                                       

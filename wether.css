@@ -30,7 +30,7 @@ body{
     
 }
 .header .logo .go {
-    background-image: url(We.png);
+    background-image: url(img/We.png);
     background-size: cover;
     z-index: 2;
     width: 80px;

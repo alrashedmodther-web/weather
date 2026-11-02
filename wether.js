@@ -1,6 +1,5 @@
 let serch=document.getElementById("sersh");
 let but=document.getElementById("sub");
-let upOfweth=document.querySelector(".cotener .wather");
 let sit=document.getElementById("sit");
 let slid= document.querySelector(".slider-sitting");
 let sitt=document.getElementById("def");
